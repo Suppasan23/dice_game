@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Pig Game</title>
+  </head>
+
+  <body>
+    <div class="description">
+      <h1>เกมส์ทอยลูกเต๋า</h1>
+      <ol>
+        <li>
+          ผลัดกันกดทอยลูกเต๋าเพื่อสะสมแต้มฝ่ายใดสามารถสะสมแต้มได้ถึง 50
+          ก่อนจะเป็นผู้ชนะ
+        </li>
+        <li>หากทอยได้ 1 จะเสียแต้มในรอบนั้น</li>
+        <li>สามารถกดปุ่ม HOLD เพื่อหยุดทอยหากได้แต้มที่พอใจรอบนั้น</li>
+      </ol>
+    </div>
+
+    <main>
+      <section class="player player--1">
+        <h2 class="name" id="name--1"><!-- Player 1 --></h2>
+        <p class="total-score" id="total-score--1"><!-- 0 --></p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current-score--1"><!-- 0 --></p>
+        </div>
+        <img src="dice-5.png" alt="Playing dice" class="dice1" />
+        <button class="btn btn--roll1">🎲 Roll dice</button>
+        <button class="btn btn--hold1">📥 Hold</button>
+      </section>
+
+      <section class="player player--2">
+        <h2 class="name" id="name--2"><!-- Player 2 --></h2>
+        <p class="total-score" id="total-score--2"><!-- 0 --></p>
+        <div class="current">
+          <p class="current-label">Current</p>
+          <p class="current-score" id="current-score--2"><!-- 0 --></p>
+        </div>
+        <img src="dice-5.png" alt="Playing dice" class="dice2" />
+        <button class="btn btn--roll2">🎲 Roll dice</button>
+        <button class="btn btn--hold2">📥 Hold</button>
+      </section>
+
+      <button class="btn btn--new">🔄 New game</button>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
